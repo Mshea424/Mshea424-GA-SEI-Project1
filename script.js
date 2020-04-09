@@ -1,13 +1,29 @@
-let l = document.querySelector(`.l`)
 
+let word = `LETTER`
+let letters = word.split(``)
+console.log(letters)
+// populate letters loop
+let lContainer = document.querySelector(`.letters`)
+
+for (let i = 0; i < letters.length; i++) {
+    let l = document.createElement('div')
+    l.classList.add('l')
+    lContainer.appendChild(l)
+}
+let divL
 // Comparison function
+let lettersMatched = []
+console.log(document.querySelectorAll(`.l`)[2])
 function keycompare(elmt) {
-    if (l.innerText === elmt.innerText) {
-    console.log(`Win!`)
-    } else {
-    console.log(`Lose!`)
+    for (let i = 0; i < letters.length; i++) {
+        if (letters[i] === elmt.innerText) {
+        lettersMatched.push('l')
+        console.log(lettersMatched)
+        document.querySelectorAll(`.l`)[i].innerText = letters[i]
+        }
     }
 }
+
 // KBLine 1 variables
 const kq = document.querySelector(`#kq`)
 const kw = document.querySelector(`#kw`)
