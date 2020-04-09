@@ -1,9 +1,9 @@
 
 let word = `LETTER`
 let letters = word.split(``)
-console.log(letters)
 // populate letters loop
 let lContainer = document.querySelector(`.letters`)
+document.querySelector(`.statBar`).innerText = `Nackbook is running smoothly!`
 
 for (let i = 0; i < letters.length; i++) {
     let l = document.createElement('div')
@@ -13,14 +13,45 @@ for (let i = 0; i < letters.length; i++) {
 let divL
 // Comparison function
 let lettersMatched = []
+let breakCount = []
 console.log(document.querySelectorAll(`.l`)[2])
 function keycompare(elmt) {
-    for (let i = 0; i < letters.length; i++) {
-        if (letters[i] === elmt.innerText) {
+    let breakCheck = []
+    for (let i = 0; i < letters.length; i++) {   
+         if (letters[i] === elmt.innerText) {        
         lettersMatched.push('l')
-        console.log(lettersMatched)
-        document.querySelectorAll(`.l`)[i].innerText = letters[i]
-        }
+        breakCheck.push('l')
+         document.querySelectorAll(`.l`)[i].innerText = letters[i]    
+        }   
+    }
+    console.log(breakCheck)
+    if (breakCheck.length !== 0) {
+        alert('You chose the correct key! We Have progress! Sadly, this state-of-the-art key, is now broken.')
+    } else {
+        breakCount.push('b')
+        console.log(breakCount)
+        alert(`Oops! Wrong key!`)
+    }
+    if (lettersMatched.length < letters.length && breakCount.length === 1) {
+        document.querySelector(`.statBar`).innerText = 'Your charging cable broke! Better hurry while the battery still works!'
+    } else if (breakCount.length === 2) {
+        
+    }
+    if (lettersMatched.length < letters.length && breakCount.length === 3) {
+        
+    }
+    if (lettersMatched.length < letters.length && breakCount.length === 4) {
+
+    }
+    if (lettersMatched.length < letters.length && breakCount.length === 5) {
+        document.querySelector(`.statBar`).innerText = `The coffee done been spilted accross your "Nackbook"! That can't be good!`
+    } 
+    if (lettersMatched.length < letters.length && breakCount.length === 6) {
+        document.querySelector(`.statBar`).innerText = 'Your "Nackbook" has just undergone a mandatory OS update. It is now bricked. Better luck next time!'
+        alert(`The Nackbook didnt make it. Our message is lost.`)
+    }
+    if (lettersMatched.length === letters.length && breakCount.length < 6) {
+        alert('Message is complete! We have been saved!')
     }
 }
 
@@ -87,3 +118,23 @@ kv.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {k
 kb.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(kb); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
 kn.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(kn); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
 km.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(km); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
+
+
+if (breakCount.length === 1) {
+    alert('Your charging cable broke! Better hurry while the battery still works!')
+} else if (breakCount.length === 2) {
+    alert('')
+}
+if (breakCount.length === 3) {
+    alert('')
+}
+if (breakCount.length === 4) {
+    alert('')
+}
+if (breakCount.length === 5) {
+    alert(`The coffee done been spilted accross your "Nackbook"! That can't be good!`)
+} 
+if (breakCount.length === 6) {
+    alert('Your "Nackbook" has just undergone a mandatory OS update. It is now bricked. Better luck next time!')
+}
+
