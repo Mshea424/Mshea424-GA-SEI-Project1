@@ -1,9 +1,11 @@
 
+let img = document.querySelector('img')
+img.src = `images/img1.png`
 let word = `Letter`
 let letters = word.split(``)
 // populate letters loop
 let lContainer = document.querySelector(`.letters`)
-document.querySelector(`.statBar`).innerText = `Nackbook is running smoothly!`
+document.querySelector(`.statBar`).innerText = `Brendan's Nackbook is running smoothly! What could possibly go wrong?`
 
 for (let i = 0; i < letters.length; i++) {
     let l = document.createElement('div')
@@ -33,24 +35,27 @@ function keycompare(elmt) {
         alert(`Oops! Wrong key!`)
     }
     if (lettersMatched.length < letters.length && breakCount.length === 1) {
-        document.querySelector(`.statBar`).innerText = 'Your charging cable broke! Better hurry while the battery still works!'
-    } else if (breakCount.length === 2) {
-        document.querySelector(`.statBar`).innerText = `Looks like the screen cracked! I guess we'll have to ride the color wave.`
+        document.querySelector(`.statBar`).innerText = `Brendan's Zappy-Straw broke! Better hurry while the battery still works!`
+        img.src = `images/img2.png`
+    }
+    if (lettersMatched.length < letters.length && breakCount.length === 2) {
+        document.querySelector(`.statBar`).innerText = `The sales department is planning a new event! Let it be known!!! ... hopefully Brendan doesn't get too distracted ...`
+        img.src = `images/img3.png`
     }
     if (lettersMatched.length < letters.length && breakCount.length === 3) {
-        
+        document.querySelector(`.statBar`).innerText = `Looks like the NackBook's cutting-edge monitor is starting to display some personality. Brendan may notice a slight color shift on the edges of his screen.`
+        img.src = `images/img4.png`
     }
     if (lettersMatched.length < letters.length && breakCount.length === 4) {
-
-    }
-    if (lettersMatched.length < letters.length && breakCount.length === 5) {
-        document.querySelector(`.statBar`).innerText = `The coffee done been spilted accross your "Nackbook"! That can't be good!`
+        document.querySelector(`.statBar`).innerText = `Oops, Brendan's coffee cup just went all 'Jackson-Pollock' on his Nackbook! But, look! it's inspired the monitor to display some Abstract art!`
+        img.src = `images/img5.png`
     } 
-    if (lettersMatched.length < letters.length && breakCount.length === 6) {
-        document.querySelector(`.statBar`).innerText = 'Your "Nackbook" has just undergone a mandatory OS update. It is now bricked. Better luck next time!'
+    if (lettersMatched.length < letters.length && breakCount.length === 5) {
+        document.querySelector(`.statBar`).innerText = `Brendan's Nackbook has just undergone a mandatory OS update. It is now bricked. Better luck next time!`
         alert(`The Nackbook didnt make it. Our message is lost.`)
+        img.src = `images/img6.png`
     }
-    if (lettersMatched.length === letters.length && breakCount.length < 6) {
+    if (lettersMatched.length === letters.length && breakCount.length < 5) {
         alert('Message is complete! We have been saved!')
     }
 }
