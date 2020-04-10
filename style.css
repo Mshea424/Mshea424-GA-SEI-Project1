@@ -1,6 +1,16 @@
-.test {
-    color: white;
-    background: red;
+.image {
+    width: 720px;
+    height: 480px;
+    border: 2px solid black;
+    margin: 15px auto;
+    border-radius: 4px;
+}
+.statBar {
+    width: 680px;
+    height: 40px;
+    border: 2px solid black;
+    margin: 0 auto;
+
 }
 .k {
     background: yellow;

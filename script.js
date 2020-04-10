@@ -1,5 +1,5 @@
 
-let word = `LETTER`
+let word = `Letter`
 let letters = word.split(``)
 // populate letters loop
 let lContainer = document.querySelector(`.letters`)
@@ -18,7 +18,7 @@ console.log(document.querySelectorAll(`.l`)[2])
 function keycompare(elmt) {
     let breakCheck = []
     for (let i = 0; i < letters.length; i++) {   
-         if (letters[i] === elmt.innerText) {        
+         if (letters[i].toUpperCase() === elmt.innerText) {        
         lettersMatched.push('l')
         breakCheck.push('l')
          document.querySelectorAll(`.l`)[i].innerText = letters[i]    
@@ -35,7 +35,7 @@ function keycompare(elmt) {
     if (lettersMatched.length < letters.length && breakCount.length === 1) {
         document.querySelector(`.statBar`).innerText = 'Your charging cable broke! Better hurry while the battery still works!'
     } else if (breakCount.length === 2) {
-        
+        document.querySelector(`.statBar`).innerText = `Looks like the screen cracked! I guess we'll have to ride the color wave.`
     }
     if (lettersMatched.length < letters.length && breakCount.length === 3) {
         
