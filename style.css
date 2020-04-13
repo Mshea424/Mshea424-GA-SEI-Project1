@@ -1,15 +1,19 @@
 .image {
-    width: 720px;
+    width: 730px;
     height: 480px;
-    border: 2px solid black;
-    margin: 15px auto;
-    border-radius: 4px;
+    border: 10px solid black;
+    margin: 10px auto;
+    border-radius: 10px;
 }
 .statBar {
-    width: 680px;
+    width: 730px;
     height: 40px;
     border: 2px solid black;
+    border-radius: 5px;
     margin: 0 auto;
+    padding: 10px;
+    font-family: 'Spartan', sans-serif;
+
 
 }
 .k {
@@ -32,6 +36,10 @@
     justify-content: center;
 }
 .kBoard {
+    width: 710px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin: 0 auto;
     background-color: rgba(220, 220, 220, 1);
     padding: 15px;
 }
@@ -60,7 +68,8 @@
     height: 40px;
     width: 30px;
     margin: 5px;
+    font-family: 'Russo One', sans-serif;
     font-size: 30px;
-    border-bottom: 2px solid blue;
-    color: blue;
+    border-bottom: 2px solid black;
+    color: black;
 }
