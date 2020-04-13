@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .image {
     width: 730px;
     height: 480px;
@@ -88,9 +91,9 @@
     color: black;
 }
 .cover {
-    width: 100%;
-    height: cover;
-    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
     top: 0;
     bottom: 0;
     background-color:rgba(0, 0, 0, 0.7);
