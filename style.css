@@ -13,15 +13,54 @@
 
 }
 .k {
-    background: yellow;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin: 0 4px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    background: black;
+}
+.kBline {
+    display: flex;
+    height: 68px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.kBoard {
+    background-color: rgba(220, 220, 220, 1);
+    padding: 15px;
 }
 
 .bk {
-    color: blue;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    border-color: black;
+    margin: 0 4px;
+    align-items: center;
+    justify-content: center;
+    color: rgba (125, 125, 125, 0.1);
+    background: gray;
 
 }
-
+.letters {
+    display: flex;
+    justify-content: center;
+}
 .l {
-    background: blue;
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 30px;
+    margin: 5px;
+    font-size: 30px;
+    border-bottom: 2px solid blue;
+    color: blue;
 }

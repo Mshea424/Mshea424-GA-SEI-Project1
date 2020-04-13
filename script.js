@@ -28,7 +28,7 @@ function keycompare(elmt) {
     }
     console.log(breakCheck)
     if (breakCheck.length !== 0) {
-        alert('You chose the correct key! We Have progress! Sadly, this state-of-the-art key, is now broken.')
+        alert('You chose the correct key! We Have progress! Sadly, this Flutterby key, is now broken.')
     } else {
         breakCount.push('b')
         console.log(breakCount)
