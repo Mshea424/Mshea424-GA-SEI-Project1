@@ -59,6 +59,18 @@
     background-image: url("images/kb.jpg");
 
 }
+.message {
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+.m {
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    margin-right: 30px;
+}
 .letters {
     display: flex;
     justify-content: center;
@@ -74,4 +86,65 @@
     font-size: 30px;
     border-bottom: 2px solid black;
     color: black;
+}
+.cover {
+    width: 100%;
+    height: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popUp {
+    height: 650px;
+    width: 724px;
+    position: relative;
+    background-color: white;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+.exit {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 40px;
+    
+}
+.popImg {
+    height: 480px;
+    width: 720px;
+    border: 2px solid black;
+    margin: 45px 0px 10px 0px;
+    
+
+}
+.popText {
+    font-family: 'Spartan', sans-serif;
+    text-align: justify;
+}
+.buttonContainer {
+    width: 100%;
+    height: 34px;
+    position: absolute;
+    bottom: 4px;
+    display: flex;
+    justify-content: center;
+    ;
+
+}
+.nextButton {
+    height: 30px;
+    width: 100px;
+    margin: 2px 1px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    background-color: rgba(220, 220, 220, 1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
 }

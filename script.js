@@ -124,22 +124,5 @@ kb.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {k
 kn.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(kn); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
 km.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(km); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
 
-
-if (breakCount.length === 1) {
-    alert('Your charging cable broke! Better hurry while the battery still works!')
-} else if (breakCount.length === 2) {
-    alert('')
-}
-if (breakCount.length === 3) {
-    alert('')
-}
-if (breakCount.length === 4) {
-    alert('')
-}
-if (breakCount.length === 5) {
-    alert(`The coffee done been spilted accross your "Nackbook"! That can't be good!`)
-} 
-if (breakCount.length === 6) {
-    alert('Your "Nackbook" has just undergone a mandatory OS update. It is now bricked. Better luck next time!')
-}
-
+document.querySelector(`#pop1`).style.display = `none`
+document.querySelector(`#pop3`).style.display = `none`
