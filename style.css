@@ -112,17 +112,18 @@
     right: 10px;
     transform: rotate(45deg);
     font-size: 40px;
-    
+}
+.exit:hover {
+    color: gray;
 }
 .popImg {
     height: 480px;
     width: 720px;
     border: 2px solid black;
     margin: 45px 0px 10px 0px;
-    
-
 }
 .popText {
+    margin: 15px;
     font-family: 'Spartan', sans-serif;
     text-align: justify;
 }
@@ -147,4 +148,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Russo One', sans-serif;
+}
+.nextButton:hover {
+    background-color: white;
 }

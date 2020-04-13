@@ -16,7 +16,6 @@ let divL
 // Comparison function
 let lettersMatched = []
 let breakCount = []
-console.log(document.querySelectorAll(`.l`)[2])
 function keycompare(elmt) {
     let breakCheck = []
     for (let i = 0; i < letters.length; i++) {   
@@ -126,3 +125,8 @@ km.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {k
 
 document.querySelector(`#pop1`).style.display = `none`
 document.querySelector(`#pop3`).style.display = `none`
+for (let i = 0; i < document.querySelectorAll(`.exit`).length; i++) {
+    document.querySelectorAll(`.exit`)[i].addEventListener(`click`, () => {
+    document.querySelector(`.cover`).style.display = `none`
+    })
+}
