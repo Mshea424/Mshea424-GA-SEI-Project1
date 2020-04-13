@@ -125,8 +125,14 @@ km.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {k
 
 document.querySelector(`#pop2`).style.display = `none`
 document.querySelector(`#pop3`).style.display = `none`
+document.querySelector(`#pop4`).style.display = `none`
+console.log(document.querySelector(`#pop3`))
 for (let i = 0; i < document.querySelectorAll(`.exit`).length; i++) {
     document.querySelectorAll(`.exit`)[i].addEventListener(`click`, () => {
     document.querySelector(`.cover`).style.display = `none`
     })
 }
+document.querySelector(`#next1`).addEventListener(`click`, () => {document.querySelector(`#pop1`).style.display = `none`; document.querySelector(`#pop2`).style.display = `block`})
+document.querySelector(`#prev2`).addEventListener(`click`, () => {document.querySelector(`#pop2`).style.display = `none`; document.querySelector(`#pop1`).style.display = `block`})
+document.querySelector(`#next2`).addEventListener(`click`, () => {document.querySelector(`#pop2`).style.display = `none`; document.querySelector(`#pop3`).style.display = `block`})
+// document.querySelector(`#prev3`).addEventListener(`click`, () => {document.querySelector(`#pop3`).style.display = `none`; document.querySelector(`#pop2`).style.display = `block`})
