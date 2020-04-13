@@ -123,7 +123,7 @@ kb.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {k
 kn.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(kn); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
 km.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(km); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
 
-document.querySelector(`#pop1`).style.display = `none`
+document.querySelector(`#pop2`).style.display = `none`
 document.querySelector(`#pop3`).style.display = `none`
 for (let i = 0; i < document.querySelectorAll(`.exit`).length; i++) {
     document.querySelectorAll(`.exit`)[i].addEventListener(`click`, () => {

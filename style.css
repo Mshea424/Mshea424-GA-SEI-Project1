@@ -125,6 +125,7 @@
 .popText {
     margin: 15px;
     font-family: 'Spartan', sans-serif;
+    line-height: 22px;
     text-align: justify;
 }
 .buttonContainer {
