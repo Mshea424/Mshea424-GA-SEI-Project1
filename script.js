@@ -135,4 +135,4 @@ for (let i = 0; i < document.querySelectorAll(`.exit`).length; i++) {
 document.querySelector(`#next1`).addEventListener(`click`, () => {document.querySelector(`#pop1`).style.display = `none`; document.querySelector(`#pop2`).style.display = `block`})
 document.querySelector(`#prev2`).addEventListener(`click`, () => {document.querySelector(`#pop2`).style.display = `none`; document.querySelector(`#pop1`).style.display = `block`})
 document.querySelector(`#next2`).addEventListener(`click`, () => {document.querySelector(`#pop2`).style.display = `none`; document.querySelector(`#pop3`).style.display = `block`})
-// document.querySelector(`#prev3`).addEventListener(`click`, () => {document.querySelector(`#pop3`).style.display = `none`; document.querySelector(`#pop2`).style.display = `block`})
+document.querySelector(`#prev3`).addEventListener(`click`, () => {document.querySelector(`#pop3`).style.display = `none`; document.querySelector(`#pop2`).style.display = `block`})

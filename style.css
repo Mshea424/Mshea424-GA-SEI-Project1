@@ -102,7 +102,8 @@ body {
     align-items: center;
 }
 .popUp {
-    height: 650px;
+    display: block;
+    height: 670px;
     width: 724px;
     position: relative;
     background-color: white;
