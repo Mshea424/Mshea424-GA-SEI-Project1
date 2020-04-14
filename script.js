@@ -126,6 +126,10 @@ km.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {k
 document.querySelector(`#pop2`).style.display = `none`
 document.querySelector(`#pop3`).style.display = `none`
 document.querySelector(`#pop4`).style.display = `none`
+document.querySelector(`#pop5`).style.display = `none`
+document.querySelector(`#pop6`).style.display = `none`
+document.querySelector(`#pop7`).style.display = `none`
+document.querySelector(`#pop8`).style.display = `none`
 console.log(document.querySelector(`#pop3`))
 for (let i = 0; i < document.querySelectorAll(`.exit`).length; i++) {
     document.querySelectorAll(`.exit`)[i].addEventListener(`click`, () => {
@@ -136,3 +140,13 @@ document.querySelector(`#next1`).addEventListener(`click`, () => {document.query
 document.querySelector(`#prev2`).addEventListener(`click`, () => {document.querySelector(`#pop2`).style.display = `none`; document.querySelector(`#pop1`).style.display = `block`})
 document.querySelector(`#next2`).addEventListener(`click`, () => {document.querySelector(`#pop2`).style.display = `none`; document.querySelector(`#pop3`).style.display = `block`})
 document.querySelector(`#prev3`).addEventListener(`click`, () => {document.querySelector(`#pop3`).style.display = `none`; document.querySelector(`#pop2`).style.display = `block`})
+document.querySelector(`#next3`).addEventListener(`click`, () => {document.querySelector(`#pop3`).style.display = `none`; document.querySelector(`#pop4`).style.display = `block`})
+document.querySelector(`#prev4`).addEventListener(`click`, () => {document.querySelector(`#pop4`).style.display = `none`; document.querySelector(`#pop3`).style.display = `block`})
+document.querySelector(`#next4`).addEventListener(`click`, () => {document.querySelector(`#pop4`).style.display = `none`; document.querySelector(`#pop5`).style.display = `block`})
+document.querySelector(`#prev5`).addEventListener(`click`, () => {document.querySelector(`#pop5`).style.display = `none`; document.querySelector(`#pop4`).style.display = `block`})
+document.querySelector(`#next5`).addEventListener(`click`, () => {document.querySelector(`#pop5`).style.display = `none`; document.querySelector(`#pop6`).style.display = `block`})
+document.querySelector(`#prev6`).addEventListener(`click`, () => {document.querySelector(`#pop6`).style.display = `none`; document.querySelector(`#pop5`).style.display = `block`})
+document.querySelector(`#next6`).addEventListener(`click`, () => {document.querySelector(`#pop6`).style.display = `none`; document.querySelector(`#pop7`).style.display = `block`})
+document.querySelector(`#prev7`).addEventListener(`click`, () => {document.querySelector(`#pop7`).style.display = `none`; document.querySelector(`#pop6`).style.display = `block`})
+document.querySelector(`#next7`).addEventListener(`click`, () => {document.querySelector(`.cover`).style.display = `none`})
+document.querySelector(`#next8`).addEventListener(`click`, () => {document.querySelector(`.cover`).style.display = `none`})
