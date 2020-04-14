@@ -18,8 +18,6 @@ body {
     font-family: 'Spartan', sans-serif;
     line-height: 30px;
     text-align: justify;
-
-
 }
 .k {
     display: flex;
@@ -89,7 +87,6 @@ body {
     background-color: rgba(220, 220, 220, 1);
     padding: 15px;
 }
-
 .bk {
     display: flex;
     height: 60px;
@@ -101,14 +98,12 @@ body {
     justify-content: center;
     font-size: 0;
     background-image: url("images/kb.jpg");
-
 }
 .message {
     width: 750px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-
 }
 .m {
     font-family: 'Russo One', sans-serif;
@@ -180,8 +175,6 @@ body {
     bottom: 4px;
     display: flex;
     justify-content: center;
-    ;
-
 }
 .nextButton {
     height: 30px;
@@ -195,6 +188,9 @@ body {
     align-items: center;
     font-family: 'Russo One', sans-serif;
 }
+.nextButton:hover {
+    background-color: white;
+}
 #next9 {
     height: 30px;
     width: 270px;
@@ -207,6 +203,6 @@ body {
     align-items: center;
     font-family: 'Russo One', sans-serif;
 }
-.nextButton:hover {
+#next9:hover{
     background-color: white;
 }

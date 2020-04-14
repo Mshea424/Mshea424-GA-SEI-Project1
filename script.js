@@ -124,14 +124,18 @@ kv.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {k
 kb.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(kb); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
 kn.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(kn); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
 km.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(km); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
-kent.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'kent' || evt.target.parentElement.id === 'kent') { 
-    kent.classList.remove('kent'); kent.classList.add('bkent'); 
-    document.querySelector(`#ent`).style.display = `none`; document.querySelector(`#ret`).style.display = `none`; 
-    document.querySelector(`.cover`).style.display = `flex`; document.querySelector(`#pop1`).style.display = `none`; document.querySelector(`#pop2`).style.display = `none`; 
-    document.querySelector(`#pop3`).style.display = `none`; document.querySelector(`#pop4`).style.display = `none`; document.querySelector(`#pop5`).style.display = `none`;
-    document.querySelector(`#pop6`).style.display = `none`; document.querySelector(`#pop7`).style.display = `none`; document.querySelector(`#pop8`).style.display = `block`;
-    document.querySelector(`.message`).style.display = `flex`
-    } else {alert(`"Flutterby" Key is Broken!`)}})
+kent.addEventListener(`click`, (evt) => {
+    if(evt.target.classList.value === 'kent' || evt.target.parentElement.id === 'kent') { 
+        kent.classList.remove('kent'); kent.classList.add('bkent'); 
+        document.querySelector(`#ent`).style.display = `none`; document.querySelector(`#ret`).style.display = `none`; 
+        document.querySelector(`.cover`).style.display = `flex`; document.querySelector(`#pop1`).style.display = `none`; document.querySelector(`#pop2`).style.display = `none`; 
+        document.querySelector(`#pop3`).style.display = `none`; document.querySelector(`#pop4`).style.display = `none`; document.querySelector(`#pop5`).style.display = `none`;
+        document.querySelector(`#pop6`).style.display = `none`; document.querySelector(`#pop7`).style.display = `none`; document.querySelector(`#pop8`).style.display = `block`;
+        document.querySelector(`.message`).style.display = `flex`
+    } else {
+        alert(`"Flutterby" Key is Broken!`)
+    }
+})
 
 document.querySelector(`#pop2`).style.display = `none`
 document.querySelector(`#pop3`).style.display = `none`
