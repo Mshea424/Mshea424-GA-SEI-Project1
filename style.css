@@ -33,6 +33,32 @@ body {
     color: white;
     background: black;
 }
+#kent {
+    display: relative;
+    height: 60px;
+    width: 90px;
+    border-radius: 5px;
+    margin: 0 52px 0 4px;
+    background: black;
+}
+#ent {
+    margin: 6px 0 0 52px;
+    height: 20px;
+    width: 32px;
+    font-size: 10px;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    background: black;
+}
+#ret {
+    margin: 16px 6px 6px 44px;
+    height: 13px;
+    width: 40px;
+    font-size: 12px;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    background: black;
+}
 .kBline {
     display: flex;
     height: 68px;
@@ -40,11 +66,18 @@ body {
     align-items: center;
     justify-content: center;
 }
+.kBline3 {
+    display: flex;
+    height: 68px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
 .kBoard {
     width: 710px;
     border: 2px solid gray;
     border-radius: 20px;
-    margin: 0 auto;
+    margin: 15px auto;
     background-color: rgba(220, 220, 220, 1);
     padding: 15px;
 }
@@ -129,7 +162,7 @@ body {
 .popText {
     margin: 15px;
     font-family: 'Spartan', sans-serif;
-    line-height: 22px;
+    line-height: 24px;
     text-align: justify;
 }
 .buttonContainer {
