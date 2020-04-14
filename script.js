@@ -3,6 +3,7 @@ let img = document.querySelector('img')
 img.src = `images/img1.png`
 let word = `Toiletpaper`
 let letters = word.split(``)
+document.querySelector(`.message`).style.display = `none`
 // populate letters loop
 let lContainer = document.querySelector(`.letters`)
 document.querySelector(`.statBar`).innerText = `Damage Status: Brendan's Nackbook is running smoothly! What could possibly go wrong?`
@@ -90,6 +91,7 @@ const kv = document.querySelector(`#kv`)
 const kb = document.querySelector(`#kb`)
 const kn = document.querySelector(`#kn`)
 const km = document.querySelector(`#km`)
+const kent = document.querySelector(`#kent`)
 
 //KBline 1 Listeners
 kq.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(kq); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
@@ -122,6 +124,15 @@ kv.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {k
 kb.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(kb); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
 kn.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(kn); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
 km.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'k') {keycompare(km); evt.target.classList.remove('k'); evt.target.classList.add('bk')} else {alert(`"Flutterby" Key is Broken!`)}})
+kent.addEventListener(`click`, (evt) => {if(evt.target.classList.value === 'kent') { 
+    evt.target.classList.remove('kent'); evt.target.classList.add('bkent'); 
+    document.querySelector(`#ent`).style.display = `none`; document.querySelector(`#ret`).style.display = `none`; 
+    document.querySelector(`.cover`).style.display = `flex`; document.querySelector(`#pop1`).style.display = `none`; document.querySelector(`#pop2`).style.display = `none`; 
+    document.querySelector(`#pop3`).style.display = `none`; document.querySelector(`#pop4`).style.display = `none`; document.querySelector(`#pop5`).style.display = `none`;
+    document.querySelector(`#pop6`).style.display = `none`; document.querySelector(`#pop7`).style.display = `none`; document.querySelector(`#pop8`).style.display = `block`;
+    document.querySelector(`.message`).style.display = `flex`
+    } else {alert(`"Flutterby" Key is Broken!`)}})
+
 
 document.querySelector(`#pop2`).style.display = `none`
 document.querySelector(`#pop3`).style.display = `none`
@@ -130,7 +141,8 @@ document.querySelector(`#pop5`).style.display = `none`
 document.querySelector(`#pop6`).style.display = `none`
 document.querySelector(`#pop7`).style.display = `none`
 document.querySelector(`#pop8`).style.display = `none`
-console.log(document.querySelector(`#pop3`))
+document.querySelector(`#pop9`).style.display = `none`
+
 for (let i = 0; i < document.querySelectorAll(`.exit`).length; i++) {
     document.querySelectorAll(`.exit`)[i].addEventListener(`click`, () => {
     document.querySelector(`.cover`).style.display = `none`
@@ -149,4 +161,5 @@ document.querySelector(`#prev6`).addEventListener(`click`, () => {document.query
 document.querySelector(`#next6`).addEventListener(`click`, () => {document.querySelector(`#pop6`).style.display = `none`; document.querySelector(`#pop7`).style.display = `block`})
 document.querySelector(`#prev7`).addEventListener(`click`, () => {document.querySelector(`#pop7`).style.display = `none`; document.querySelector(`#pop6`).style.display = `block`})
 document.querySelector(`#next7`).addEventListener(`click`, () => {document.querySelector(`.cover`).style.display = `none`})
-document.querySelector(`#next8`).addEventListener(`click`, () => {document.querySelector(`.cover`).style.display = `none`})
+document.querySelector(`#next8`).addEventListener(`click`, () => {document.querySelector(`#pop8`).style.display = `none`; document.querySelector(`#pop9`).style.display = `block`})
+document.querySelector(`#next9`).addEventListener(`click`, () => {document.querySelector(`.cover`).style.display = `none`})
